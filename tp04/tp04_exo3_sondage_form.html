@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sondage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="tp04_exo3_sondage_style.css"/>
+    </head>
+    <body>
+        <form method="post" action="tp04_exo3_sondage_action.php">
+            
+        <div class="container">
+          <div class="jumbotron">
+            <h1>Sondage</h1>
+            
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <p><label>Nom</label><p>
+              <p><input type="text" name="nom" value="" /></p>
+            
+              <p><label>Prénom</label><p>
+              <p><input type="text" name="prénom" value="" /></p>
+      
+              <p><label>Sexe</label>&nbsp;
+              <input type="radio" name="sexe" value="M" />&nbsp;M
+              <input type="radio" name="sexe" value="F" />&nbsp;F</p>
+            </div>
+            <div class="col-sm-4">
+               <p><label>Opérateur</label></p>
+      
+               <p>
+          <input type="checkbox" name="orange" checked="checked" /> Orange
+      <input type="checkbox" name="sfr" checked="checked" /> SFR
+      <input type="checkbox" name="bouygues" checked="checked" /> Bouygues</p>
+      <p>
+          <input type="checkbox" name="free" checked="checked"/> Free
+      <input type="checkbox" name="virgin" checked="checked" /> Virgin
+      <input type="checkbox" name="autres" checked="checked" /> Autres
+      </p>
+               
+            </div>
+            <div class="col-sm-4">
+                 <p><label>Services(Pour les choix multiples, tapez command)</label>
+                 <select multiple name="services[]"  size="1">
+                 <option></option>
+                 <option value="1">Présentation du numéro</option>
+                 <option value="2">Forfait illimité</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+                 <option value="5">5</option>
+                 <option value="6">6</option>
+                 <option value="7">7</option>
+                 <option value="8">8</option>
+                 <option value="9">9</option>
+                 <option value="10">10</option>
+                 </select></p>
+
+                 <p><label>Veuillez choisir le prix mensuel le plus proche</label>
+                 <select name="prix[]">
+                 <option></option>
+                 <option value="10euro">10€</option>
+                 <option value="20euro">20€</option>
+                 <option value="30euro">30€</option>
+                 <option value="40euro">40€</option>
+                 <option value="50euro">50€</option>
+                 <option value="60euro">60€</option>
+
+                 </select></p>
+            </div>
+          </div>
+            
+            <input type="submit" value="Submit" />
+        </div>
+        </form>
+    </body>
+</html>
